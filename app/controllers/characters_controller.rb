@@ -34,7 +34,7 @@ class CharactersController < ApplicationController
 
   def destroy
     @character.destroy
-    redirect_to character_path, status: :see_other
+    redirect_to characters_path, status: :see_other
   end
 
   private

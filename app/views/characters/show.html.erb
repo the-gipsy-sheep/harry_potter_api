@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="card m-3 position-relative" style="max-width: 840px;">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="<%= @character.image_url %>" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><%= @character.name %></h5>
+          <p class="card-text"><%= @character.review %></p>
+          <p class="card-text"><small class="text-muted">Interpretado por: <%= @character.actor %></small></p>
+          <div class="options position-absolute bottom-0 end-0 m-2">
+            <%= link_to "Editar", edit_character_path(@character), class:"btn btn-primary" %>
+            <%= link_to "Eliminar", character_path(@character), class:"btn btn-danger", data: {turbo_method: :delete, turbo_confirm: "Seguro?"} %>
+            <%= link_to "Volver", characters_path, class:"btn btn-primary" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,16 @@
 @import "bootstrap/scss/bootstrap";
+@import "banner";
+@import "img-link";
+@import "footer";
+@import "card";
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

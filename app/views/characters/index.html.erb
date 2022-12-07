@@ -1,7 +1,7 @@
 <div class="container position-absolute top-50 start-50 translate-middle-x g-col-3">
   <% @characters.sample(4).each do |character| %>
     <%= link_to character_path(character.id) do %>
-      <%= image_tag character.image_url, style:"width: 300px; height: 300px;", class: "img-link" %>
+      <%= image_tag character.image_url, style:"width: 300px; height: 300px;", class: "img-link raise up" %>
     <% end %>
   <% end %>
 </div>
